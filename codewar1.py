@@ -11,12 +11,15 @@ def order(sentence):
   		if char.isdigit():
   			num_order.append(char)
 
-  num_order = [int(x) for x in num_order]
-
-  sorted_sentence.insert()
-
+  num_order = [(int(x) - 1) for x in num_order]
+  sorted_sentence = [broken_sentence[i] for i in num_order]
 
 
-  return (broken_sentence,num_order)
+
+
+
+  return (sorted_sentence)
 
 print(order('is2 Thi1s T4est 3a'))
+
+
