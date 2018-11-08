@@ -12,14 +12,15 @@ def order(sentence):
   			num_order.append(char)
 
   num_order = [(int(x) - 1) for x in num_order]
+  num_order_sorted = sorted(num_order)
   sorted_sentence = [broken_sentence[i] for i in num_order]
+  
+
+  sorted_sentence = " ".join(sorted_sentence)
+
+  return (broken_sentence,num_order,sorted_sentence)
+
+print(order('g3ood 4of the2 pe6ople th5e Fo1r'))
 
 
-
-
-
-  return (sorted_sentence)
-
-print(order('is2 Thi1s T4est 3a'))
-
-
+ 
